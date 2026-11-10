@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# data (Kaggle CSVs, landing files, warehouse)
+dataset/
+data/
+
+# dbt build output
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+
+# Python / Jupyter
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/

@@ -1,0 +1,7 @@
+retailrocket:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /opt/project/data/warehouse.duckdb
+      threads: 1          # DuckDB allows a single writer

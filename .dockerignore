@@ -1,0 +1,5 @@
+# Only the requirements are needed to build; the project is mounted at runtime.
+# Keeps dataset/ (~950 MB) out of the build context.
+*
+!requirements.txt
+!requirements-dbt.txt

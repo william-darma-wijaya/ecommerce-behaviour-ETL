@@ -1,0 +1,4 @@
+event_type_key,event_type,funnel_step,description
+1,view,1,Viewed the item page
+2,addtocart,2,Added to cart
+3,transaction,3,Purchased

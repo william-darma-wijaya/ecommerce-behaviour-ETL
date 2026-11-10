@@ -1,0 +1,25 @@
+name: retailrocket
+version: "1.0.0"
+profile: retailrocket
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+models:
+  retailrocket:
+    silver:
+      +schema: silver
+    gold:
+      +schema: gold
+
+seeds:
+  retailrocket:
+    +schema: gold
+    dim_event_type:
+      +column_types: {event_type_key: SMALLINT, event_type: VARCHAR, funnel_step: SMALLINT, description: VARCHAR}
+
+vars:
+  batch_id:                                               # given on the command line, e.g. --vars "{batch_id: 2015060100}"
+  valid_event_time_range: ["2015-05-01", "2015-10-01"]

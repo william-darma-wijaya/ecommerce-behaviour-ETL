@@ -1,0 +1,10 @@
+version: 2
+
+# Bronze tables, loaded by ingestion/ingest_bronze.py. Not the simulator's `source` schema, which dbt never reads.
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: brz_events
+      - name: brz_item_properties
+      - name: brz_category_tree

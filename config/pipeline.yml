@@ -1,0 +1,10 @@
+paths:
+  raw_dir: dataset
+  landing_dir: data/landing
+  warehouse_db: data/warehouse.duckdb
+
+simulation:
+  start: "2015-06-01T00:00:00"
+  end:   "2015-06-15T00:00:00"
+  step_hours: 24
+  max_backlog_batches: 3          # the simulator stops advancing if the pipeline is > N batches behind
